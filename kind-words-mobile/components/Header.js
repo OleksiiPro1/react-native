@@ -1,6 +1,6 @@
-import { SafeAreaView } from 'react-native-web';
+import { SafeAreaView, Text, View } from 'react-native';
 
-export default (props) => {
+export default function Header(props) {
   return (
     <SafeAreaView>
       <View>
@@ -8,4 +8,4 @@ export default (props) => {
       </View>
     </SafeAreaView>
   );
-};
+}

@@ -5,7 +5,7 @@ import { colors } from './styles/constants';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text style={styles.logo}>My new app!</Text>
+      <Text style={styles.logo}>My new app!!</Text>
 
       <StatusBar style="auto" />
     </View>
@@ -21,6 +21,6 @@ const styles = StyleSheet.create({
   },
   logo: {
     color: colors.text,
-    fontSize: 50,
+    fontSize: 60,
   },
 });
