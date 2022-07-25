@@ -1,4 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
+import react, { useState } from 'react';
 import { FlatList, StyleSheet, View } from 'react-native';
 import Header from './components/Header';
 import PostItem from './components/PostItem';
@@ -8,7 +9,7 @@ const renderItem = (post) => {
   return <PostItem post={post.item} />;
 };
 export default function App() {
-  const posts = [
+  const [posts, setPosts] = useState([
     {
       sender: 'Ramon',
       handle: 'hola_soy_milk',
@@ -27,7 +28,7 @@ export default function App() {
       body: 'An experience!',
       createdAt: new Date(),
     },
-  ];
+  ]);
   return (
     <View style={styles.container}>
       <Header style={styles.logo} label="React Native!" />
